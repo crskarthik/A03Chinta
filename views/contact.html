@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Contact</title>
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/css/font-awesome.css" rel="stylesheet">
+  
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container-fluid" style="background-image: url('/img/bg.png'); background-repeat: repeat;">
+            <div class="nav-side-menu">
+                    <div class="brand">
+                         
+                        <img src="/img/pp2.jpg" class="img-circle profile-pic" alt="Profile Picture">
+                        <br/> <br/> 
+                    </div>
+                   
+                    <ul>
+                        <!--<li><a class="active" style=" border-top-left-radius: 10px; border-top-right-radius: 10px;"href="#home">Home</a></li>-->
+                        <li><a href="index.html"><i class="fa fa-home" style="font-size:1.2em" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="guestbook"><i class="fa fa-book" style="font-size:1.2em" aria-hidden="true"></i> Guest Book</a></li>                        
+                        <li><a href="Flight.html"><i class="fa fa-desktop"  style="font-size:1.2em" aria-hidden="true"></i> Works</a></li>
+                        <li><a href="contact.html" class="active"><i class="fa fa-phone-square"  style="font-size:1.2em" aria-hidden="true"></i> Contact</a></li>
+                        <!--<li><a href="#about"style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">About</a></li>-->
+                      
+                        <li><a class="btn btn-block btn-lg btn-inverse" onclick="feedback()">
+                                <i class="fa fa-comments-o" aria-hidden="true"></i>
+                                 Feedback
+                               
+                            </a>
+                            </li>
+                        <li id="feedbackArea"></li>
+                    </ul>
+            </div>
+        <div class="main-content" >
+            
+            
+        <div class="jumbotron" id="jumbo">
+
+            <form class="form-horizontal" action="contact" method="POST">
+                    <fieldset>
+                <!-- Form Name -->
+                            <h2><strong><b>Contact</b></strong></h2><hr>
+                <div class="col-md-6 vr">
+                                                 
+                    <!-- Text input-->
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" >Email</label>  
+                      <div class="col-md-9">
+                      <input id="email" name="email" type="email" required="required" placeholder="Email" class="form-control input-md">  
+                      </div>
+                    </div>
+                    
+                    <!-- Textarea -->
+                    <div class="form-group">
+                      <label class="col-md-2 control-label" >Queries</label>
+                      <div class="col-md-9">                     
+                        <textarea class="form-control" id="query" required="required" name="query"></textarea>
+                      </div>
+                    </div>
+                    
+                    <!-- Button -->
+                    <div class="form-group">
+                     <br/>
+                      <div class="col-md-offset-2 col-md-9">
+                        <button id="submit" name="submit" class="btn btn-primary btn-block">Submit</button>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <legend><center>Social</center></legend>
+                  <a href="https://www.linkedin.com/in/karthikcrs/" target="_blank" class="col-md-offset-4 social"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                  <a href="https://www.facebook.com/rajasrikar" target="_blank" class="social"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                  <a href="https://plus.google.com/u/1/+SrikarKarthik" target="_blank" class="social"><i class="fa fa-google-plus-official" aria-hidden="true"></i></a>
+                  <a href="https://github.com/crskarthik" target="_blank" class="social"><i class="fa fa-github-square" aria-hidden="true"></i></a>
+                  <a href="https://bitbucket.org/crskarthik/" target="_blank" class="social"><i class="fa fa-bitbucket-square" aria-hidden="true"></i></a>
+                </div>
+                    </fieldset>
+                    </form>
+                    
+        </div>
+           
+            
+        </div>
+    </div>
+    <script src="https://use.fontawesome.com/04e043df8c.js"></script>
+    <script src="/js/custom.js"></script>
+</body>
+
+
+</html>

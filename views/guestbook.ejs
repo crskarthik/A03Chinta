@@ -1,0 +1,23 @@
+<% include header %>
+<% if (entries.length) { %>
+<% entries.forEach(function(entry) { 
+    console.log("Log:"+entry.title);
+    console.log("Log:"+entry.content);
+    console.log("Log:"+entry.published);
+    %>
+<div class="col-md-10"> 
+<div class="panel panel-default">
+<div class="panel-heading" class="content-color">
+<div class="text-muted pull-right">
+<%= entry.published %></div>
+<%= entry.title %></div>
+<div class="panel-body" class="content-color" style="color:black"> 
+<%= entry.content %>
+</div>
+</div>
+</div>
+<% }) %>
+<% } else { %>
+No entries! <a href="/new-entry">Add one!</a>
+<% } %>
+<% include footer %>
