@@ -1,12 +1,13 @@
-{   "name": "M07",
+{   "name": "A03Chinta",
     "version": "0.0.1",
     "description": "simple guestbook app",
-    "main": "gbapp.js",
+    "main": "server.js",
     "dependencies": {
         "express": "latest",
         "morgan": "latest",
         "body-parser": "latest",
-        "ejs": "latest"
+        "ejs": "latest",
+        "mailgun-js":"latest"
     },
     "author": "Chinta Raja Srikar Karthik",
     "homepage": "https://bitbucket.org/crskarthik/w07",

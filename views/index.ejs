@@ -1,23 +1,83 @@
-<% include header %>
-<% if (entries.length) { %>
-<% entries.forEach(function(entry) { 
-    console.log("Log:"+entry.title);
-    console.log("Log:"+entry.content);
-    console.log("Log:"+entry.published);
-    %>
-<div class="col-md-8"> 
-<div class="panel panel-default">
-<div class="panel-heading" class="content-color">
-<div class="text-muted pull-right">
-<%= entry.published %></div>
-<%= entry.title %></div>
-<div class="panel-body" class="content-color"> 
-<%= entry.content %>
-</div>
-</div>
-</div>
-<% }) %>
-<% } else { %>
-No entries! <a href="/new-entry">Add one!</a>
-<% } %>
-<% include footer %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Karthik C R S</title>
+
+  <!-- Bootstrap -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <link href="https://raw.githubusercontent.com/FortAwesome/Font-Awesome/master/css/font-awesome.css" rel="stylesheet">
+  
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container-fluid" style="background-image: url('/img/bg.png'); background-repeat: repeat;">
+            <div class="nav-side-menu">
+                    <div class="brand">
+                         
+                        <img src="/img/pp2.jpg" class="img-circle profile-pic" alt="Profile Picture">
+                        <br/> <br/> 
+                    </div>
+                   
+                    <ul>
+                        <!--<li><a class="active" style=" border-top-left-radius: 10px; border-top-right-radius: 10px;"href="#home">Home</a></li>-->
+                        <li><a class="active" href="index.html"><i class="fa fa-home" style="font-size:1.2em" aria-hidden="true"></i> Home</a></li>
+                        <li><a href="guestbook"><i class="fa fa-book" style="font-size:1.2em" aria-hidden="true"></i> Guest Book</a></li>                        
+                        <li><a href="Flight.html"><i class="fa fa-desktop"  style="font-size:1.2em" aria-hidden="true"></i> Works</a></li>
+                        <li><a href="contact.html"><i class="fa fa-phone-square"  style="font-size:1.2em" aria-hidden="true"></i> Contact</a></li>
+                        <!--<li><a href="#about"style=" border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">About</a></li>-->
+                      
+                        <li><a class="btn btn-block btn-lg btn-inverse" onclick="feedback()">
+                         <i class="fa fa-comments-o" aria-hidden="true"></i>
+                            Feedback
+                        </a>
+                        </li>
+                        <li id="feedbackArea"></li>
+                    </ul>
+            </div>
+        <div class="main-content">
+            
+            
+                <article>
+                        <header>
+                            <h2 id="heading"><u>Chinta Raja Srikar Karthik</u></h2>			
+                        </header>
+                        <div class="articleBG">
+                        <section class="mainText"><h5>Background:</h5>
+                            <p>I'm Karthik from Hyderabad,India. I graduated in Computer science from Sri Chandrashekarendhra vishwa maha vidhyalaya in May 2015.<br>I worked in cognizant for 2 years as a programmer analyst and played an important role in designing Content Management system to maintain projects which follow agile SDLC. </p>
+                        </section>
+                        <section class="mainText col-md-6"  style="padding-left:0px"><h5>Plans:</h5> 
+                            <p>I have a business plan for initiating Internet of Things in large scale. which help in reaching all people with easy access to handy devices.Main motive of my project is to make reach of IoT to every person in my country.</p>
+                        </section>
+                        <section class="col-md-6" >
+                                <h5 hidden>video</h5>   
+                            <iframe width="360" height="187" style="border:double;margin-left:100px;" src="https://www.youtube.com/embed/qyRSZwWPARQ?rel=0&amp;start=14160" allowfullscreen></iframe>
+                                
+                        </section>
+                        <section class="mainText">
+                            <h5>Intrests:</h5><p>I'm intrested in upgrading my programing skills depending upon the pace of industry.I follow many open source forums which help in upgrading ourself.I like cricket in sports.My Favourite website is the which is designed by me during my college days (<a href="http://www.scsvmv.in">www.scsvmv.in</a>, <a href="http://www.tarunyam.in">www.tarunyam.in</a>, <a href="www.bios2k14.in">www.bios2k14.in</a>)</p>
+                        </section>
+                        </div>
+                        <footer>Copyright&copy; Karthik C R S 2017</footer>
+                    </article>
+           
+            
+        </div>
+    </div>
+    <script src="https://use.fontawesome.com/04e043df8c.js"></script>
+    <script src="/js/custom.js"></script>
+</body>
+
+
+</html>
