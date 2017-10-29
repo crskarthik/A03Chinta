@@ -28,7 +28,7 @@ app.get("/", function (request, response) {
   // response.sendfile('index.html')
 })
 app.get("/about", function (request, response) {
-  response.render("index")
+  response.render("about")
   // response.sendfile('index.html')
 })
 app.get("/guestbook", function (request, response) {
@@ -40,6 +40,9 @@ app.get("/test", function (request, response) {
 })
 app.get("/new-entry", function (request, response) {
   response.render("new-entry")
+})
+app.get("/contact", function (request, response) {
+  response.sendFile("contact.html", { root: __dirname +"/views" })
 })
 app.post("/contact", function (request, response) {
   var api_key = 'key-018f1c90c0902cf145d3bc023b2cda30';
