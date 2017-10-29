@@ -27,11 +27,16 @@ app.get("/", function (request, response) {
   response.render("index")
   // response.sendfile('index.html')
 })
+app.get("/about", function (request, response) {
+  response.render("index")
+  // response.sendfile('index.html')
+})
 app.get("/guestbook", function (request, response) {
   response.render("guestbook")
 })
 app.get("/test", function (request, response) {
-  response.render("test/test")
+  response.render("test")
+
 })
 app.get("/new-entry", function (request, response) {
   response.render("new-entry")
