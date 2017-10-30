@@ -23,7 +23,7 @@ app.use(express.static(__dirname + '/views'))
 app.use(logger("dev"))     // app.use() establishes middleware functions
 app.use(bodyParser.urlencoded({ extended: false }))
 // 4 handle http GET requests (default & /new-entry)
-app.get("/", function (request, response) {
+app.get(['/','/index'], function (request, response) {
   response.render("index")
   // response.sendfile('index.html')
 })
@@ -51,7 +51,7 @@ app.post("/contact", function (request, response) {
    
   var data = {
     from: 'A03 WebApp <postmaster@sandbox5445b14231524e53b22a6cb28a5190ad.mailgun.org>',
-    to: 'rajasrikar2010@gmail.com',
+    to: 's530460@nwmissouri.edu',
     subject: 'Contact from '+request.body.email,
     text: request.body.query
   };

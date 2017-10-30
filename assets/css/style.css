@@ -8,6 +8,9 @@ body{
   background-size: cover;
   color: white;
 }
+#WebTitle{
+  margin-left: 20%;
+}
 #welcomeMsg{
   padding-top:25%;
   padding-left:13%;
@@ -28,9 +31,9 @@ body{
   }
 
   .nav-side-menu .brand {
-      padding-top: 50px;
+      padding-top: 20px;
     background-color: #23282e;
-    line-height: 50px;
+    line-height: 20px;
     display: block;
     text-align: center;
     font-size: 14px;
@@ -112,6 +115,7 @@ li a:hover:not(.active) {
     text-decoration: none;
 }
 @media (max-width: 767px) {
+
   .main-content{
     background-image: url("assets/img/bg.jpg");
     background-repeat: repeat;
@@ -120,6 +124,9 @@ li a:hover:not(.active) {
     height:100vh;
     font-size: 19px;
     background-size: cover;
+}
+#WebTitle{
+  margin-left: 36%;
 }
     .nav-side-menu {
       position: relative;
